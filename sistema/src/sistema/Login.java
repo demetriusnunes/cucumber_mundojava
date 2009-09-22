@@ -108,7 +108,7 @@ public class Login extends javax.swing.JDialog {
     private void entrarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarButtonActionPerformed
         if (loginValido()) {
             this.dispose();
-            Principal principal = new Principal();
+            Principal principal = new Principal(usuarioField.getText());
             principal.setVisible(true);
         }
         else {

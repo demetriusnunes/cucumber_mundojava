@@ -18,8 +18,9 @@ package sistema;
 public class Principal extends javax.swing.JFrame {
 
     /** Creates new form Principal */
-    public Principal() {
+    public Principal(String usuario) {
         initComponents();
+        mensagemLabel.setText("Bem-vindo Sr. " + usuario + "!");
     }
 
     /** This method is called from within the constructor to
@@ -31,12 +32,12 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        mensagemLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Principal");
 
-        jLabel1.setText("Bem-vindo Sr. Silva!");
+        mensagemLabel.setText("Bem-vindo Sr. ####!");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -44,14 +45,14 @@ public class Principal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(122, 122, 122)
-                .addComponent(jLabel1)
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addComponent(mensagemLabel)
+                .addContainerGap(149, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(82, 82, 82)
-                .addComponent(jLabel1)
+                .addComponent(mensagemLabel)
                 .addContainerGap(202, Short.MAX_VALUE))
         );
 
@@ -60,7 +61,7 @@ public class Principal extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel mensagemLabel;
     // End of variables declaration//GEN-END:variables
 
 }
