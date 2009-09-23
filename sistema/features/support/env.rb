@@ -9,5 +9,5 @@ Before do
 end
 
 After do
-  @container.close
+  @container.close if @container
 end
