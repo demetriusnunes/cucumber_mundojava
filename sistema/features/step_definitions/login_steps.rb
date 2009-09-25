@@ -1,5 +1,3 @@
-import 'sistema.Login'
-
 Dado /^que estou na tela de Login$/ do
   @container = dialog("Login")
 end

@@ -17,6 +17,7 @@ end
 World(Test::Unit::Assertions)
 
 Before do
+  import 'sistema.Login'
   Login.main([].to_java(:string))
 end
 
