@@ -1,0 +1,29 @@
+= Automação de Testes de Aceitação com Cucumber e JRuby 
+
+Este é o projeto de exemplo utilizado para escrever o artigo para a Revista Mundo Java.
+
+Após clonar o projeto do GitHub, não esqueça de rodar os seguintes comandos, a partir da raiz:
+
+ $ git submodule init
+ $ git submodule update
+ 
+Isso irá inicializar os submódulos do projeto e fazer com que a biblioteca Swinger seja devidamente puxada do GitHub para dentro da pasta sistema/features/support/swinger.
+
+Para compilar a aplicação de exemplo que se encontra no diretóreio 'sistema', você pode abrir o projeto no Netbeans IDE ou utilizar Ant 1.7.1 em linha de comando e fazer:
+
+ cucumber_mundojava/ $ cd sistema
+ cucumber_mundojava/sistema/ $ ant
+
+Isso irá gerar o jar 'sistema.jar' dentro da pasta 'dist'.
+
+Agora, para rodar o sistema faça:
+
+ cucumber_mundojava/sistema/ $ java -jar dist/sistema.jar
+ 
+Para executar as especificações, você deve ter JRuby instalado, assim como a biblioteca Cucumber. Tendo instalado corretamente JRuby, instale Cucumber através do comando:
+
+ $ jruby -S gem install cucumber
+ 
+Finalmente, para executar as especificações, execute o comando:
+
+ cucumber_mundojava/sistema/ $ jruby -S cucumber features

@@ -1,0 +1,3 @@
+[submodule "sistema/lib/swinger"]
+	path = sistema/lib/swinger
+	url = git://github.com/demetriusnunes/swinger.git
