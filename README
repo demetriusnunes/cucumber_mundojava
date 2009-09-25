@@ -4,10 +4,10 @@ Este é o projeto de exemplo utilizado para escrever o artigo para a Revista Mun
 
 Após clonar o projeto do GitHub, não esqueça de rodar os seguintes comandos, a partir da raiz:
 
- $ git submodule init
- $ git submodule update
+ cucumber_mundojava/ $ git submodule init
+ cucumber_mundojava/ $ git submodule update
  
-Isso irá inicializar os submódulos do projeto e fazer com que a biblioteca Swinger seja devidamente puxada do GitHub para dentro da pasta sistema/features/support/swinger.
+Isso irá inicializar os submódulos do projeto e fazer com que a biblioteca Swinger seja devidamente puxada do GitHub para dentro da pasta cucumber_mundojava/sistema/lib/swinger.
 
 Para compilar a aplicação de exemplo que se encontra no diretóreio 'sistema', você pode abrir o projeto no Netbeans IDE ou utilizar Ant 1.7.1 em linha de comando e fazer:
 

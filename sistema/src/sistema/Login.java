@@ -21,6 +21,7 @@ public class Login extends javax.swing.JDialog {
     public Login(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.getRootPane().setDefaultButton(entrarButton);
     }
 
     /** This method is called from within the constructor to
@@ -45,7 +46,6 @@ public class Login extends javax.swing.JDialog {
         usuarioField.setName("Usuário"); // NOI18N
 
         senhaField.setColumns(20);
-        senhaField.setText("jPasswordField1");
         senhaField.setName("Senha"); // NOI18N
 
         entrarButton.setText("Entrar");
